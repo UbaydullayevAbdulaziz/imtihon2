@@ -727,6 +727,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 100px;
 }
 
 .ready__title {
