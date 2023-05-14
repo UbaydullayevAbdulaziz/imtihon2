@@ -1,0 +1,56 @@
+#ready__btn{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.ready__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ready__title {
+    font-family: $font2;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+    color: #36536B;
+}
+
+.ready__email{
+    max-width: 445px;
+    width: 445px;
+    position: relative;
+}
+
+.ready__input{
+    @include input
+}
+
+.ready__btn{
+    @include button;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+@media screen and (max-width:900px) {
+   .ready__container{
+    text-align: center;
+    flex-direction: column;
+    gap: 40px;
+   }
+
+   .ready__email{
+    margin: 0 auto;
+   }
+}
+
+@media screen and (max-width:580px) {
+    .ready__btn{
+        position: relative;
+        max-width: 100%;
+        width: 100%;
+        margin-top: 40px;
+    }
+}

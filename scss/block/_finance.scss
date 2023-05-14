@@ -1,0 +1,81 @@
+#finance{
+    padding-bottom: 100px;
+}
+
+.finance__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1110px;
+    gap: 20px;
+}
+
+.finance__item {
+    max-width: 350px;
+ }
+
+.finance__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.138462px;
+    color: #36536B;
+    margin-bottom: 16px;
+}
+
+.finance__text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.115385px;
+    color: #6C8294;
+}
+.finance__item:first-child::before{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    width: 106px;
+    height: 106px;
+    background-repeat: no-repeat;
+    background-image: url(../../img/finance.svg);
+
+   
+} 
+
+.finance__item:nth-child(2)::before{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    width: 106px;
+    height: 106px;
+    background-repeat: no-repeat;
+    background-image: url(../../img/covevage.svg);
+
+   
+} 
+.finance__item:last-child::before{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    width: 106px;
+    height: 106px;
+    background-repeat: no-repeat;
+    background-image: url(../../img/payments.svg);
+
+   
+} 
+
+@media screen and (max-width:660px) {
+    .finance__list{
+        flex-direction: column;
+    }
+
+    .finance__item+.finance__item{
+        margin-top: 48px;
+    }
+}

@@ -1,0 +1,145 @@
+.header__background {
+    background-repeat: no-repeat;
+    background-image: url(../../img/header__bg.svg);
+    background-position: right top;
+}
+
+.bg__container {
+    padding: 0;
+}
+
+#hero {
+    padding-bottom: 75px;
+}
+
+.hero__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__content {
+    max-width: 546px;
+}
+
+.hero__title {
+    font-family: $font2;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -0.553846px;
+    margin-bottom: 21px;
+    color: #36536B;
+}
+
+.hero__email {
+    max-width: 445px;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.hero__input {
+    @include input
+}
+
+.hero__btn {
+    @include button;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.hero__contact {
+    display: flex;
+}
+
+.hero__end-img {
+    border-radius: 35px;
+    overflow: hidden;
+}
+
+.hero__text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #6C8294;
+}
+
+.hero__link {
+    padding-left: 2px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #6C8294;
+}
+
+@media screen and (max-width:920px) {
+
+    .header__background {
+        background-image: url(../../img/header__bg-tablet.svg);
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+    .hero__container {
+        flex-direction: column-reverse;
+    }
+
+
+    .hero__end-img {
+        border-radius: 50px;
+        overflow: hidden;
+    }
+
+    .hero__content {
+        margin-top: 48px;
+        text-align: center;
+        max-width: 573px;
+    }
+
+    .hero__contact {
+        justify-content: center;
+    }
+
+    .hero__title {
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 56px;
+        margin-bottom: 22px;
+    }
+
+    .hero__email {
+        margin-bottom: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .hero__title {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 36px;
+        text-align: center;
+        letter-spacing: -0.246154px;
+    }
+
+   
+    .hero__btn {
+        position: relative;
+        max-width: 100%;
+        width: 100%;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: -0.115385px;
+    }
+
+    .hero__content{
+        margin-top: 24px ;
+    }
+    .hero__input {
+        margin-bottom: 16px;
+    }
+}
