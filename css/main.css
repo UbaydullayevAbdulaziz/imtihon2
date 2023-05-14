@@ -715,11 +715,6 @@ header {
     margin-top: 48px;
   }
 }
-#ready__btn {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
 .ready__container {
   display: -webkit-box;
   display: -ms-flexbox;
